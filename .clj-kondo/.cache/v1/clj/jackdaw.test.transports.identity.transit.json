@@ -1,0 +1,1 @@
+["^ ","~$identity-consumer",["^ ","~:row",9,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$jackdaw.test.transports.identity","~:top-ns","^7"],"~$identity-producer",["^ ","^1",15,"^2",1,"^3",["^4",[0]],"^5","^9","^6","^7","^8","^7"],"~:filename","/home/baishakhi/.m2/repository/fundingcircle/jackdaw/0.7.6/jackdaw-0.7.6.jar:jackdaw/test/transports/identity.clj"]

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <appender name="SIMPLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logfile.general.name:-logs/application.log}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${logfile.general.name:-logs/application.log}.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!-- keep 30 days worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            </layout>
+            <immediateFlush>false</immediateFlush>
+        </encoder>
+    </appender>
+    <appender name="AsyncFile" class="ch.qos.logback.classic.AsyncAppender">
+        <queueSize>500</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+        <appender-ref ref="FILE" />
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+    <logger name="snakesladders.web" additivity="false">
+        <level value="WARN"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="snakesladders.game.config" additivity="false">
+        <level value="WARN"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="snakesladders.games" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="snakesladders.game.handlers" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="engine.util" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="engine.timeouts" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="engine.push" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="engine.comms" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="com.pekaplay" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="org.apache.kafka" additivity="false">
+        <level value="WARN"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+</configuration>

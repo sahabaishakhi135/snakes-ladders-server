@@ -1,0 +1,18 @@
+[; Development API
+ "localhost:8000"
+ "127.0.0.1:8000"
+ "127.0.0.1:8080"
+ "localhost:7070"
+ "127.0.0.1:7070"
+ ;
+ ; Staging API
+ ;
+ "demo.jaqk.in"
+ "9ec4769e2d12.ngrok.io"
+ "f9984ddafda9.ngrok.io"
+ "0797-122-171-90-242.ngrok.io"
+ ;
+ ; Live API
+ ;
+ "snakesladders.jaqk.in"
+ "games-api.domadogames.com"]

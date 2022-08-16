@@ -1,0 +1,17 @@
+[{
+        "betValue": 10.0,
+        "category": "snakesladders",
+        "maxBuyin": 10.0,
+        "minBuyin": 10.0,
+        "numPlayers": 2,
+        "rakePct":    15,
+        "tableCode": "snakesladders-4p-10",
+        "tableId": "4",
+        "tableLimit": 1,
+        "tableName": "snakesladders \u20b910 entry",
+        "tableType": "snakesladders",
+        "gameTime": 600,
+        "numRolls": 24,
+        "numBeads": 3
+    }
+]

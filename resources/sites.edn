@@ -1,0 +1,6 @@
+[;{:api-key "bb4b5b1c-b922-48e9-8220-3027a2ad0b6f"
+ ; :secret-key "41abe20f-8ad9-4f1b-bedc-742556f0890c"
+ ; :site-id 1}
+ {:api-key "aiogames"
+  :secret-key "aiogamespass"
+  :site-id 99}]

@@ -1,0 +1,3 @@
+#!/bin/bash
+ver=$(head project.clj -n 1 | cut -d' ' -f3)
+rm -rf target && lein uberjar && docker build . -t snakesladders:${ver:1:-1} -t snakesladders:latest

@@ -1,0 +1,1 @@
+["^ ","~$change-player-status",["^ ","~:row",6,"~:col",1,"~:fixed-arities",["~#set",[3]],"~:name","^0","~:ns","~$snakesladders.round.cmds.im-back","~:top-ns","^7","~:arities",["^ ","~i3",["^ ","~:ret","~:vector"]]],"~:filename","/home/baishakhi/Documents/vume/snakes-ladders-server/src/snakesladders/round/cmds/im_back.clj"]

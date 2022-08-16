@@ -1,0 +1,1 @@
+{:turn-timeout 15, :director-service "http://localhost:9091", :mysql-pass "sonyP910i", :tables-json "tables.json", :port 8090, :secret-key "41abe20f-8ad9-4f1b-bedc-742556f0890c", :config-src "edn", :host "127.0.0.1:8090", :allow-cors-sessions "true", :host-id 1337, :mysql-user "root", :templates-root "public", :api-key "bb4b5b1c-b922-48e9-8220-3027a2ad0b6f"}

@@ -1,0 +1,9 @@
+{234 {:name "Hallmark Casino"
+      :code "hallmark"
+      :home-url "http://hc-casino.com"
+      :lobby-url "http://hc-casino.com/lobby/games"
+      :banking-url "http://hc-casino.com/cashier"
+      :wallet :betsoft
+      :base-url "https://apis.hc-casino.com/api/pekaplay"
+      :pass-key "tfhguyfg29F3qA8"
+      :api-key "BE5D1813C28CD"}}
